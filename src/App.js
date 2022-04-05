@@ -1,8 +1,9 @@
 import "./App.css";
-import Header from "./Components/Header/Header"; 
+import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Review from "./Components/Review/Review";
 import DashBoard from "./Components/DashBoard/DashBoard";
+import Questions from "./Components/Questions/Questions";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./Components/NotFound/NotFound";
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/DashBoard" element={<DashBoard></DashBoard>}></Route>
+        <Route path="/Questions" element={<Questions></Questions>}></Route>
         <Route path="/Review" element={<Review></Review>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>

@@ -16,6 +16,9 @@ const Header = () => {
             <Link className="m-10" to="/DashBoard">
               DashBoard
             </Link>
+            <Link className="m-10" to="/Questions">
+              Questions
+            </Link>
             <Link className="m-10" to="*">
               About
             </Link>
