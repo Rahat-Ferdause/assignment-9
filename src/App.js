@@ -6,6 +6,7 @@ import DashBoard from "./Components/DashBoard/DashBoard";
 import Questions from "./Components/Questions/Questions";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./Components/NotFound/NotFound";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/DashBoard" element={<DashBoard></DashBoard>}></Route>
         <Route path="/Questions" element={<Questions></Questions>}></Route>
         <Route path="/Review" element={<Review></Review>}></Route>
+        <Route path="/About" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
