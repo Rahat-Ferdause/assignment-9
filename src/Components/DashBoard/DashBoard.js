@@ -63,7 +63,7 @@ const DashBoard = () => {
           <Tooltip></Tooltip>
         </LineChart>
       </div>
-      {/* <div>
+      <div>
         <BarChart width={800} height={500} data={data} stroke="#8884d8">
           <Bar dataKey={"investment"} fill="#8884d8"></Bar>
           <Bar dataKey={"sell"} fill="#8884d8"></Bar>
@@ -72,7 +72,7 @@ const DashBoard = () => {
           <YAxis></YAxis>
           <Tooltip></Tooltip>
         </BarChart>
-      </div> */}
+      </div>
     </div>
   );
 };
