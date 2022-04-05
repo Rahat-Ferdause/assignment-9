@@ -1,9 +1,9 @@
 import React from "react";
 
-const Comment = (props) => {
+const HomeReview = (props) => {
   const { name, comment, mark } = props.Review;
   return (
-    <div className="bg-orange-400 m-4 w-auto	gap-4">
+    <div className="bg-orange-400 m-4 gap-4">
       <div>
         <h2>Name: {name}</h2>
         <h4>Ratting: {mark}</h4>
@@ -13,4 +13,4 @@ const Comment = (props) => {
   );
 };
 
-export default Comment;
+export default HomeReview;

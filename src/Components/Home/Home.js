@@ -1,6 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import HomeReview from "../HomeReview/HomeReview";
 
 const Home = () => {
+  const HomeReviews = [
+    { id: 1, name: "Ema John", comment: "Nice Agency", mark: "4.5/5" },
+    {
+      id: 2,
+      name: "Leonardo-Decaprio",
+      comment: "Nice Service",
+      mark: "4.2/5",
+    },
+    {
+      id: 3,
+      name: "Ema Watson",
+      comment: "Short Time processing",
+      mark: "4.4/5",
+    },
+  ];
+  const navigate = useNavigate();
+  const showReview = () => {
+    navigate("/Review");
+  };
   return (
     <div>
       <div className="grid grid-cols-2 gap-4 h-full">
@@ -31,10 +52,20 @@ const Home = () => {
           />
         </div>
       </div>
-      <button className="p-2 px-8 text-xl bg-red-600 rounded-md">
+      <button
+        onClick={showReview}
+        className="p-2 px-8 text-xl bg-red-600 rounded-md"
+      >
         See Review
       </button>
-      <h1>Home Page</h1>
+      <div>
+        <h1 className="text-2xl">At a Glance</h1>
+        <div>
+          {HomeReviews.map((Review) => (
+            <HomeReview key={Review.id} Review={Review}></HomeReview>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

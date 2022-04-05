@@ -1,4 +1,3 @@
-import { comment } from "postcss";
 import React from "react";
 import Comment from "../Comment/Comment";
 
@@ -28,11 +27,11 @@ const Review = () => {
   ];
   return (
     <div>
-      <h1 className="text-3xl font-bold	italic m-4">Review Page: {Reviews.length}</h1>
+      <h1 className="text-3xl font-bold	italic m-4">What Customers Say's</h1>
       <div>
-      {Reviews.map((Review) => (
-        <Comment key={Review.id} Review={Review}></Comment>
-      ))}
+        {Reviews.map((Review) => (
+          <Comment key={Review.id} Review={Review}></Comment>
+        ))}
       </div>
     </div>
   );
